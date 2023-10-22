@@ -1,0 +1,16 @@
+syntax = "proto3";
+package counter_number;
+
+message ReadRequest {
+  string letter = 1;
+  int32 before_number = 2;
+  uint32 dummy_one = 3;
+  repeated int32 dummy_three = 5;
+}
+
+message ReadResponse {
+  int32 after_number = 1;
+  uint32 dummy_one = 2;
+  repeated int32 dummy_three = 4;
+}
+
